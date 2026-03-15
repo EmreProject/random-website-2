@@ -2,7 +2,7 @@
 
 const titleItem=document.querySelector(".title .title-item");
 const listContainer = document.querySelector("#main-page .list")
-const listChildItems=[...document.querySelectorAll("a.child")];
+const listChildItems=[...document.querySelectorAll("h1.child")];
 
 
 const activeListItem={
@@ -111,7 +111,7 @@ const textAnimation=new Animation();
 function StartTextAnimation(){
 
   activeListItem.update(0);
-  document.querySelector("div.list a").classList.add("mouse-over");
+  document.querySelector("div.list h1").classList.add("mouse-over");
   textAnimation.Start();
   
 }
